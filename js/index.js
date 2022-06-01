@@ -13,12 +13,12 @@ console.log(tamanho2)
 
 if(hacker1.length > hacker2.length) {
   
-  console.log("It seems that the navigator has the longest name, it has" + " " + hacker2.length + " " + "characters");
+  return "It seems that the navigator has the longest name, it has" + " " + hacker2.length + " " + "characters";
   
 } else if(hacker1.length < hacker2.length){
-  console.log("The driver has the longest name, it has" + " " + hacker2.length + " " + "characters");
+  return "The driver has the longest name, it has" + " " + hacker2.length + " " + "characters";
 } else {
-  console.log("Wow, you both have equally long names," + " " + hacker1.length + " " + "characters");
+  return "Wow, you both have equally long names," + " " + hacker1.length + " " + "characters";
 }
 console.log(hacker1.toUpperCase().split("").join(" "));
 
@@ -32,12 +32,12 @@ let newNavName = "";
 for(let i = hacker2.length - 1; i >= 0; i--) {
   newNavName += hacker2[i];
 }
-console.log(newNavName);
+console.log (newNavName);
 
-if (hacker1.localeCompare(hacker2) === -1) {
-  console.log("The driver's name goes first.");
+if(hacker1.localeCompare(hacker2) === -1) {
+  return "The driver's name goes first.";
 } else if (hacker1.localeCompare(hacker2) === 1) {
-  console.log("Yo, the navigator goes first definitely.");
+  return "Yo, the navigator goes first definitely.";
 } else {
-  console.log("What?! You both have the same name?");
+  return "What?! You both have the same name?";
 }
